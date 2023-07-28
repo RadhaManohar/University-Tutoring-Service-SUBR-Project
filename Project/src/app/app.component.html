@@ -1,0 +1,43 @@
+<div style="text-align: center;">
+  <h1>Welcome To University Tutoring Service</h1>
+<h2>Center for Academic Excellence</h2>
+<h3></h3>
+</div>
+
+
+<div class="toolbar" role="banner" *ngIf="isMenuVisible">
+  <img
+    width="150"
+    src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Southern_Jaguars_SU_script_logo.gif"
+  />
+
+
+  
+  <a *ngIf="isadmin" routerLink="/user">User</a>
+
+    <div class="spacer"></div>
+  <div *ngIf="isstudent">
+    <a routerLink="studenthomepage">Home</a>
+    <a routerLink="profile">Profile</a>
+    <a routerLink="viewappointments">View Appointments</a>
+    <a routerLink="bookappointment">Book Appointments</a>
+    <a routerLink="notifications">Notifications</a>
+    <a routerLink="mytutors">My Tutors</a>
+  
+  </div>
+  <div *ngIf="istutor">
+    <a routerLink="tutor-dashboard">Home</a>
+    <a routerLink="profile">Profile</a>
+    <a routerLink="studentrequests">Student Requests</a>
+    <a routerLink="notifications">Notifications</a>
+  </div>
+  <a routerLink="/login">Logout</a>
+</div>
+
+<div class="content" style="width: 100%;display: block;" role="main">
+
+  <router-outlet></router-outlet>
+
+</div>
+
+
