@@ -1,0 +1,183 @@
+.image-card {
+  width: 50;
+  height:30;
+  background-color: #e3e0ea;
+  position: relative;/* Replace with your desired background color */
+}
+
+
+
+.image-card-overlay {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  text-align: center;
+  /* justify-content: space-between; */
+}
+
+
+.text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text h4 {
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 0 0 6px #231f20;
+  font-weight: 500;
+  margin-top: -170px;
+  margin-bottom: 10px;
+  width: auto;
+  padding: 0;
+}
+
+
+
+.text p {
+  font-size: 25px;
+  width: auto;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  color:rgb(218, 159, 10);
+}
+
+.booknowbutton {
+  margin-right: 5%;
+  position:absolute;
+  bottom: 8px;
+  right: 20px;
+  width: auto;
+}
+
+/* .booknowbutton button {
+  margin-top: auto;
+} */
+
+.image-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.text{
+  bottom: 100px;
+}
+
+
+.appointments-card {
+  background-color: #e7a114; 
+  display: flex;
+  width:max-content;
+  height: 100px;
+  padding-left: 100px;
+  left: 550px;
+  top:80px/* Replace with your desired background color */
+}
+
+.appointments-card mat-card-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 20px;
+  left: 60px;
+}
+
+.appointments-card mat-card-actions button {
+  top: 20%;
+  right: 15%;
+}
+
+.apptext h4{
+  right: 20%;
+}
+
+
+.row {
+  margin: 0 -10px;
+  align-items: center;
+  width: 80%;
+  top: 40px;
+}
+
+.col-md-6{
+  justify-items: center;
+}
+  
+  @media (max-width: 768px) {
+    .col {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col {
+      flex-basis: 100%;
+    }
+  }
+
+
+/*   .container {
+    position: absolute;
+    box-sizing: border-box;
+    align-items:center;
+    max-width: fit-content;
+  }
+
+  .container img{
+    width: 100%;
+  }
+  
+  .row {
+    position: absolute;
+    justify-content: center;
+    margin: 0 -10px;
+    align-items: center;
+    width: 100%;
+    top: 40px;
+    left: 180px;
+    z-index: 1;
+  }
+  
+   .col h1 {
+    height: 50px;
+    color:white;
+    
+  } 
+
+  .btn-upcoming {
+    display: block;
+    width: 60%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  .btn {
+    display: block;
+    width: 60%;
+    padding: 10px;
+    background-color: #6384df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-items: center;
+  }
+   */

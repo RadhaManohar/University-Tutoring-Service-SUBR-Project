@@ -1,0 +1,63 @@
+/* app.component.css */
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make sure the box is centered in the viewport */
+  }
+  
+  .box {
+    position: relative; /* Enable positioning for the box */
+    width: 600px; /* Keep the width to maintain a square shape */
+    min-height: 250px; /* Updated min-height to make the box taller */
+    border: 15px solid green;
+    padding: 80px; /* Increased padding for more space inside the box */
+    margin: 40px; /* Adjust the margin as needed */
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .box-heading {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+  
+  /* Styles for the bottom row */
+  .bottom-row {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Increased padding for more space around the input area */
+  }
+  
+  /* Styles for the input and send button */
+  .bottom-row input {
+    flex: 1;
+    padding: 12px; /* Increased padding for more height */
+    font-size: 16px; /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Make the input element take up the full width of the bottom-row */
+    height: 50px; /* Updated height to match the overall size of the box */
+  }
+  
+  .send-button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #0056b3;
+  }
+  

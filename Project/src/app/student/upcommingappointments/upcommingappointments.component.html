@@ -1,0 +1,58 @@
+<h1>Upcomming Appointments</h1>
+
+<div class="table table-striped table-hover" id="tbstrip">
+    <table class="table" id="myupappoints">
+        <thead>
+            <tr>
+              <th>S.No</th>
+              <th>subject</th>
+              <th>Faculty Name</th>
+              <th>Slot</th>
+              <th>Date</th>
+              <th>#</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Computer Science</td>
+              <td>Ken Adams</td>
+              <td>4:00-5:00 pm</td>
+              <td>03/23/2023</td>
+              <td><button class="btn btn" onclick="showConfirmation()">Reschedule/cancle </button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Computer Science</td>
+              <td>Regina</td>
+              <td>2:00-3:00 pm</td>
+              <td>03/13/2023</td>
+              <td><button class="btn btn" onclick="showConfirmation()">Reschedule/cancle </button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>medical Science</td>
+              <td>Ross</td>
+              <td>4:00-5:00 pm</td>
+              <td>03/04/2023</td>
+              <td><button class="btn btn" onclick="showConfirmation()">Reschedule/cancle </button></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Computer Science</td>
+              <td>Regina</td>
+              <td>10:00-11:00 pm</td>
+              <td>03/27/2023</td>
+              <td><button class="btn btn" onclick="showConfirmation()">Reschedule/cancle </button></td>
+            </tr>
+          </tbody>
+    </table>
+  </div>
+
+
+  <div id="confirmation-box">
+    <h2>Are you sure?</h2>
+    <p>Do you want to proceed?</p>
+    <button onclick="hideConfirmation()">Cancel</button>
+    <button onclick="proceed()">Reschedule</button>
+</div>

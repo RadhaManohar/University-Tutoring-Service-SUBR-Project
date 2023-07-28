@@ -1,0 +1,27 @@
+<mat-card class="image-card">
+  <img  mat-card-image src="assets\images\studentpagebackground.jpg" alt="Image">
+  <div class="image-card-overlay">
+    <mat-card-actions>
+      <div class="text">
+      <span><h4>Welcome to SU Online Tutoring</h4>
+      <p>Looking for help to improve grades? Schedule an appointment with best Tutor online now</p></span>
+      </div>
+      <div class="booknowbutton">
+        <button mat-raised-button color=primary (click)="navigatebookappointment()">Book Appointment Now</button>
+      </div>
+    </mat-card-actions>
+  </div>  
+</mat-card>
+
+<!-- HTML code for the appointments card with "Appointments" button -->
+<mat-card class="appointments-card">
+  <div>
+    <h4 class="apptext">Here are your upcoming appointments:</h4>
+  </div>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="navigateviewappointment()"> View Appointments</button>
+  </mat-card-actions>
+</mat-card>
+
+
+

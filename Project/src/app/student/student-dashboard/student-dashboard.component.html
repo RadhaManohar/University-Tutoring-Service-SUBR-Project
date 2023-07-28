@@ -1,0 +1,55 @@
+
+<main>
+  <div class="intro">
+    <h1>SU TUTORING CENTER</h1>
+    <p>Center for Academic Success</p>
+    <button>Book Now</button>
+  </div>
+</main>  
+<main> 
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 (click)="navigateviewappointment()">Upcoming Appointments</h1>
+          
+          <div class="card shadow-lg" *ngFor="let appointments of my_appointments">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  Title : {{appointments.name}}
+                </div>
+                <div class="col-sm">
+                  Date : {{appointments.date}}
+                </div>
+                <div class="col-sm">
+                  time : {{appointments.time}}
+                </div>
+                <div class="col-sm">
+                  professor : {{appointments.professor_name}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="tutorslist">Tutors</div>
+        </div> -->
+        <div class="col">
+          <button class="btn" (click)="navigateviewappointment()">View Appointment</button>
+          <button class="btn" (click)="navigatebookappointment()">Book Appointment Now</button>
+          <button class="btn">Instructions</button>
+          <button class="btn">FAQs</button>
+          <button class="btn">Need Help</button>
+        </div>
+      </div>
+    </div>
+</main>
+
+<main>
+  <div class="about-me">
+    <div class="about-me-text">
+      <p>
+      As SU’s central learning center, the Center for Academic Success cultivates academic resilience through metacognitive development. We provide innovative services and transformational experiences that support the entire learning process to advance student persistence and achievement.</p>
+  </div>
+  </div>
+</main>

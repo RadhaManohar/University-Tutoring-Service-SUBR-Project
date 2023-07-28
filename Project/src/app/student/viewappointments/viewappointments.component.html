@@ -1,0 +1,101 @@
+<div>
+<h1>Upcomming Appointments</h1>
+
+<div class="table table-striped table-hover" id="tbstrip">
+    <table class="table" id="myupappoints">
+        <thead>
+            <tr>
+              <th>S.No</th>
+              <th>subject</th>
+              <th>Faculty Name</th>
+              <th>Slot</th>
+              <th>Date</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Computer Science(Software Engr: Control)</td>
+              <td>Dr. Angie Gwee</td>
+              <td>4:00-5:00 pm</td>
+              <td>07/29/2023</td>
+              <td><button class="btn btn" onclick="showConfirmation()">Reschedule/cancle </button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Computer Science(Data Structures)</td>
+              <td>Dr.Sudhir Trivedi</td>
+              <td>2:00-3:00 pm</td>
+              <td>07/27/2023</td>
+              <td><button class="btn btn" onclick="showConfirmation()">Reschedule/cancle </button></td>
+            </tr>
+          
+            <tr>
+              <td>3</td>
+              <td>Computer Science(Adv Topics in Info Systems)</td>
+              <td>Dr.krutthika Hirebasur Krishnappa</td>
+              <td>10:00-11:00 pm</td>
+              <td>07/28/2023</td>
+              <td><button class="btn btn" onclick="showConfirmation()">Reschedule/cancle </button></td>
+            </tr>
+          </tbody>
+    </table>
+  </div>
+  <div>
+
+
+<h1>History</h1>
+
+  <div class="table table-striped table-hover" id="tbstrip">
+      <table class="table" id="myappoints">
+          <thead>
+              <tr>
+                <th>S.No</th>
+                <th>subject</th>
+                <th>Faculty Name</th>
+                <th>Slot</th>
+                <th>Date</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Computer Science(Data Structures)</td>
+              <td>Dr.Sudhir Trivedi</td>
+                <td>4:00-5:00 pm</td>
+                <td>07/23/2023</td>
+                
+               
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Computer Science(Software Engr: Control)</td>
+              <td>Dr. Angie Gwee</td>
+                  <td>2:00-3:00 pm</td>
+                  <td>07/14/2023</td>
+                  
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Computer Science(Adv Topics in Info Systems)</td>
+              <td>Dr.krutthika Hirebasur Krishnappa</td>
+                  <td>4:00-5:00 pm</td>
+                  <td>07/07/2023</td>
+                  
+                </tr>
+                <tr>
+                  
+            </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function showConfirmation() {
+      if (confirm("Are you sure you want to reschedule/cancel this appointment?")) {
+        event.target.textContent = "Request Sent";
+      }
+    }
+    </script>
