@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Update User    </h1>
+<form [formGroup]="registerform" (ngSubmit)="UpdateUser()">
+    <div mat-dialog-content>
+
+        <section class="example-section">
+            <br>
+            name
+            <br>
+            <input type ="text" formControlName="name"> 
+            <br>
+            password
+            <br>
+            <input type ="text" formControlName="password"> 
+            <br>
+            email
+            <br>
+            <input type ="text" formControlName="email"> 
+            <br>
+             role
+            <br>
+            <input type ="text" formControlName="role"> 
+
+            <mat-checkbox  formControlName="isactive" class="example-margin">Is Active</mat-checkbox>
+        </section>
+
+    </div>
+    <div mat-dialog-actions>
+        <button type="submit" mat-raised-button color="primary" cdkFocusInitial>Save</button>
+        <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    </div>
+</form>

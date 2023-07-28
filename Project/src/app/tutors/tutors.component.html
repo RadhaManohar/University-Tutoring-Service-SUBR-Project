@@ -1,0 +1,24 @@
+<table class="tutors-table mat-table" aria-label="Tutors">
+  <thead>
+    <tr>
+      <th>Tutor Name</th>
+      <th>Email</th>
+      <th>Subject</th>
+      <th>Course Name</th>
+      <th>Course Number</th>
+      <th>Description</th>
+      <th>Book Now</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tutor of tutorsList">
+      <td>{{ tutor.name }}</td>
+      <td>{{ tutor.email }}</td>
+      <td>{{ tutor.subject }}</td>
+      <td>{{ tutor.courseName }}</td>
+      <td>{{ tutor.courseNumber }}</td>
+      <td>{{ tutor.description }}</td>
+      <td><button class="book-now-btn mat-raised-button">Book Now</button></td>
+    </tr>
+  </tbody>
+</table>
